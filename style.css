@@ -23,26 +23,26 @@ img {
     font-size: 1.5rem;
   }
   
-  ul {
+  .navbar {
     display: flex;
     list-style: none;
     padding: 0;
     margin: 0;
   }
   
-  ul li {
+  .navbar li {
     /* margin-right: 20px; */
     padding-left: 30px;
   }
   
-  ul li a {
+  .navbar li a {
     color: rgb(122, 122, 134);
     text-decoration: none;
     transition: color 0.3s;
     font-weight: bold;
   }
   
-  ul li a:hover {
+  .navbar li a:hover {
     color: rgb(24, 52, 92);
   }
   
@@ -64,7 +64,7 @@ img {
       margin-right: 20px;
     }
   
-    ul {
+    .navbar {
       position: fixed;
       top: 80px;
       right: -100%;
@@ -94,6 +94,10 @@ img {
 /* ----------------Meet Your Team Specialist--------------- */
   .marketingspecialist{
     padding: 50px;
+  }
+
+  .role{
+    padding-top: 50px;
   }
 
 /* test
