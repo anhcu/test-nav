@@ -5,100 +5,275 @@ font-size: 40px;
 
 /* -----------Nav Bar ---------------------*/
 body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  nav {
-    background-color: rgb(197, 244, 252);
-    color: rgb(122, 122, 134);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-  }
-  
-img {
-    font-size: 1.5rem;
-  }
-  
-  .navbar {
-    display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .navbar li {
-    /* margin-right: 20px; */
-    padding-left: 30px;
-  }
-  
-  .navbar li a {
-    color: rgb(122, 122, 134);
-    text-decoration: none;
-    transition: color 0.3s;
-    font-weight: bold;
-  }
-  
-  .navbar li a:hover {
-    color: rgb(24, 52, 92);
-  }
-  
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+nav {
+  background-color: rgb(197, 244, 252);
+  color: rgb(122, 122, 134);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+/* nav {
+  background-color: rgb(197, 244, 252);
+  color: rgb(122, 122, 134);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+.navbar {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar li {
+  padding-left: 30px;
+}
+
+.navbar li a {
+  color: rgb(122, 122, 134);
+  text-decoration: none;
+  transition: color 0.3s;
+  font-weight: bold;
+}
+
+.navbar li a:hover {
+  color: rgb(24, 52, 92);
+}
+
+.checkbtn {
+  font-size: 30px;
+  color: rgb(24, 52, 92);
+  cursor: pointer;
+  display: none;
+} */
+
+/* #check {
+  display: none;
+} */
+
+/* @media (max-width: 768px) {
   .checkbtn {
-    font-size: 30px;
-    color: rgb(24, 52, 92);
-    cursor: pointer;
-    display: none;
+    display: block;
+    order: 1;
+    margin-right: 20px;
   }
-  
-  #check {
-    display: none;
+
+  .navbar {
+    position: fixed;
+    top: 80px;
+    right: -100%;
+    background-color: rgb(197, 244, 252);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.3s;
   }
-  
-  @media (max-width: 768px) {
-    .checkbtn {
-      display: block;
-      order: 1;
-      margin-right: 20px;
-    }
-  
-    .navbar {
-      position: fixed;
-      top: 80px;
-      right: -100%;
-      background-color: rgb(197, 244, 252);
-      width: 100%;
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      transition: all 0.3s;
-    }
-  
-    ul li {
-      margin: 20px 0;
-    }
-  
-    ul li a {
-      font-size: 20px;
-    }
-  
-    #check:checked ~ ul {
-      right: 0;
-    }
+
+  ul li {
+    margin: 5px 0;
   }
+
+  ul li a {
+    font-size: 20px;
+  }
+
+  #check:checked~ul {
+    right: 0;
+  }
+} */
+/* -----------Service Lines Table--------------- */
+.container {
+  display: grid; /* grid containers */
+  grid-template-columns: repeat(5, 1fr); /* five columns */
+  grid-template-rows: repeat(9, 1fr); /* nine rows */
+  grid-auto-flow: column; /* in column direction */
+  border: 1px solid black;
+  /* padding: 20px; */
+}
+
+.column {
+  display: contents; /* the child elements would be grid items */
+  border: 1px solid black;
+}
+
+.cell, .cellServiceLine {
+  border: 1px solid black;
+  padding: 5px;
+  text-align: center;
+}
+
+/* .cellServiceLine{
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+} */
+
 
 /* ----------------Meet Your Team Specialist--------------- */
-  .marketingspecialist{
-    padding: 40px;
-  }
+/* .marketingspecialist {
+  padding: 40px;
+} */
+
+.marketingspecialist{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* ----------------How to submit request forms--------------- */
+.formContainer,
+.sub-listCard {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 10px;
+  justify-content: center;
+  text-align: left;
+}
+
+/* .iconForm, img{
+  padding: 10px;
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+} */
+
+.formContainer {
+  padding: 10px;
+}
+
+.iconForm {
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.formContainer img {
+  display: block;
+  width: 10%;
+  background: pink;
+}
+
+.details{
+  text-align: center;
+}
+
+
+
+
 /* ----------------Role & Responsiblities--------------- */
-  .role{
-    padding-top: 40px;
+.role {
+  padding-top: 40px;
+}
+
+
+/* MS Service Line*/
+.SL {
+  padding: 2em;
+  border: 1px solid rgb(75, 82, 92);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.grid-container,
+h2 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(440px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  text-align: center;
+}
+
+.SL img {
+  width: 70%;
+}
+
+ul,
+li {
+  text-align: left;
+  padding-left: 10px;
+}
+
+/* .yana, h3{
+  text-align: center;
+  background-color: aqua;
+} */
+
+.role,
+h3 {
+  text-align: left;
+}
+
+
+.sub-listContainer,
+SL {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+  justify-content: center;
+  text-align: left;
+}
+
+
+@media screen and (min-device-width: 481px) and (max-device-width: 768px) {
+  .sub-list .sub-listContainer {
+    background-color: aquamarine;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    text-align: left;
   }
 
-/* test
-test2 */
+  ul.practices,
+  .card-list {
+    display: inline-block;
+    text-align: left;
+    background-color: yellow;
+    font: 20px;
+    padding: 0px;
+  }
+
+  .SL,
+  h3 {
+    text-align: center;
+  }
+
+  .Sl img {
+    background: pink;
+    width: 40%;
+  }
+
+  .grid-container {
+    background: orange;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .card-list {
+    font-size: auto;
+  }
+
+  h2{
+    font-size: 15px;
+  }
+
+  .marketingspecialist{
+    padding right: 20px;
+    padding-left: 20px;
+  }
+
+  h1{
+    padding: 20px;
+  }
+}
